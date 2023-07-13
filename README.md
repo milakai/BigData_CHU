@@ -15,6 +15,7 @@ Comment donc restructurer et modéliser les données du CHU?
 - Format de fichiers/données
 - Schéma d’architecture du stagiaire existante
 - Environnement médical
+
 ![Image architecture existante](/schema_Archi_existante.jpg)
 
 ## Solution
