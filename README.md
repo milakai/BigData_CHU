@@ -16,10 +16,9 @@ Comment donc restructurer et modéliser les données du CHU?
 - Schéma d’architecture du stagiaire existante
 - Environnement médical
 
-
 <p align="center">
  <img width="33%" src="images/schema_Archi_existante.jpg">
- Schèma de l'architecture existante<br>
+ <br> Schèma de l'architecture existante
 </p>
 
 ## Solution
