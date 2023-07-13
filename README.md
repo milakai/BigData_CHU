@@ -17,7 +17,7 @@ Comment donc restructurer et modéliser les données du CHU?
 - Environnement médical
 
 <figure>
-	<img src="images/schema_Archi_existante.jpg" width="300" height="300" align="center">
+	<img src="images/schema_Archi_existante.jpg" width="350" height="350">
 	<figcaption> Schèma de l'architecture existante </figcaption>
 </figure>
 
