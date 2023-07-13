@@ -1,0 +1,33 @@
+Partition1
+
+CREATE EXTERNAL TABLE dim_hospitalisation(hos_num_hospitalisation int, hos_id_patient int, hos_identifiant_organisation string, hos_code_diagnostic string, date_entree string)
+PARTITIONED BY (hos_jour_hospitalisation int)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ",";
+STORED AS TEXTFILE
+LOCATION "/user/hive/data";
+
+SHOW PARTITION hos_jour_hospitalisation_Partition;
+
+
+Partition2
+
+CREATE EXTERNAL TABLE dim_satisfaction(sas_id_finess int, sas_score_all_ajust float)
+PARTITIONED BY (sas_region string)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ",";
+STORED AS TEXTFILE
+LOCATION "/user/hive/data";
+
+
+Partition3
+
+CREATE EXTERNAL TABLE dim_patient(ps_id_pk int, pat_nom string, pat_prenom string, pat_age int)
+PARTITIONED BY (ps_sexe string)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ",";
+STORED AS TEXTFILE
+LOCATION "/user/hive/data";
+
+
+

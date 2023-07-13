@@ -1,0 +1,81 @@
+1) Autorisation droits
+
+	hdfs dfs -chmod 777 /user/hive/warehouse
+
+1bis) Transfert fichier données sous HDFS
+
+	hadoop fs -copyFromLocal /home/cloudera/emploi_population.txt /user/hive/data
+	
+1bisbis) Ensuite, il faut charger les données dans cette table (après création de la table) :
+
+	LOAD DATA INPATH ‘user/hive/warehouse/emploi_population.txt’ OVERWRITE INTO TABLE personne ;
+
+2) Voir BD utilisée par défaut
+
+	set hive.cli.print.current.db=true ;
+
+2bis) Charger les données dans la table « tbl_Customer » en utilisant la requête suivante:
+
+	load data inpath '/user/cloudera/WS/Second_Job/tbl_Customers.txt' into 
+	table tbl_customer
+
+
+3) Créer BD sur Hive via Hue
+
+	Create database htables ;
+	
+	OU
+
+	CREATE DATABASE IF NOT EXISTS htables
+	COMMENT 'Base de données du WS Hive'
+	LOCATION '/user/hive/data/htables' ;
+
+4) Utiliser la table "htables"
+
+	use htables ;
+
+5) Utilisez ALTER pour ajouter des propriétés à la base de données « htable » :
+
+ALTER DATABASE HTABLES SET DBPROPERTIES ('owner'='A3', 'date'='2022-02-03');
+
+6) Créer une table intermédiaire (staging table) dans la base de catalogue. Cette table va pointer vers les données du fichier stocké dans HDFS.
+
+	CREATE EXTERNAL TABLE IF NOT EXISTS log_emploi_population( 
+	genre string,
+	date_naissance date,
+	fonction string,
+	salaire string
+	code_postal string,
+	id int)
+	COMMENT ‘table intermediaire’
+	ROW FORMAT DELIMITED FIELDS TERMINATED BY ‘;’
+	STORED AS TEXTFILE
+	LOCATION ‘/user/hive/data’ ;
+
+7) Pour Hive projet
+
+	CREATE TABLE IF NOT EXISTS emploi_population AS 
+	SELECT
+	substr (genre, 1, 1) sexe,
+	round(Datediff (current_timestamp(), date_naissance)/365.2425) as age,
+	fonction ,
+	salaire ,
+	code_postal ,
+	Id_empl
+	FROM log_emploi_population ;
+
+8) utilisation d’une table interne. Avant cela, il faut copiez le fichier
+« personne.txt » dans HDFS. Les données des tables internes (ou gérée) sont copiées dans l’entrepôt 
+de Hive (/user/hive/warehouse).
+Puis, créez la table interne nommée « personne » avec deux champs : l’identifiant et le nom, sachant 
+que la syntaxe est la même pour la création d’une table externe sans le mot-clé EXTERNAL TABLE et 
+LOCATION:
+
+	CREATE TABLE IF NOT EXISTS name_table( 
+	…….)
+	COMMENT ‘ ’
+	ROW FORMAT DELIMITED FIELDS TERMINATED BY ‘;’
+	STORED AS TEXTFILE ;
+	
+Reprendre les tables avec partition et faire INSERT INTO depuis un fichier .txt
+

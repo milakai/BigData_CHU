@@ -1,0 +1,44 @@
+CREATE EXTERNAL TABLE IF NOT EXISTS fact_resultats_Staging( 
+id_patient_fk int,
+id_consultation_fk int,
+id_etablissement_sante_fk varchar,
+id_diagnostic_fk varchar,
+id_hospitalisation_fk int,
+id_professionel_sante_fk varchar,
+taux_consultation_etablissement,
+taux_consultation_diagnostic,
+taux_hospitalisation_patient,
+taux_hospitalisation_diagnostic,
+taux_hospitalisation_sexe_age,
+aux_consultation_professionel,
+nb_deces_region,
+taux_satisfaction,
+)
+COMMENT ‘table intermediaire’
+ROW FORMAT DELIMITED FIELDS TERMINATED BY ‘;’
+STORED AS TEXTFILE
+LOCATION ‘/user/hive/data’ ;
+
+CREATE EXTERNAL TABLE IF NOT EXISTS Hospitalisations(
+Num_Hospitalisations int,
+Id_patient int,
+identifiant_organisation string,
+Code_diagnostic string,
+suite_diagnostic_consultation string,
+date_entree date,
+Jour_hospitalsisation int)
+COMMENT "table intermediaire"
+ROW FORMAT DELIMITED FIELDS TERMINATED BY ";"
+STORED AS TEXTFILE
+LOCATION "/user/hive/data" ;
+
+@@@@@@Partition
+Il faut partioner (table = colonne):
+table deces= sexe/code_region/nom_region
+table patients= sexe
+
+
+CREATE EXTERNAL TABLE id_org(num_hospitalisation int, id_patient int, identifiant_organisation string, code_diagnostic string, suite_diagnostic_consultation string, date_entree string, jour_hospitalsisation int)
+PARTITIONED BY (jour_hospitalsisation1 int)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ';';
