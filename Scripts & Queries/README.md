@@ -10,7 +10,7 @@ Ensuite, on crée les tables externes, on définit les colonnes ainsi que le dé
 
 
 <p align="center">
- <img width="33%" src="images/dim_consultation.png">
+ <img width="33%" src="../images/dim_consultation.png">
  <br> <em> Création de la table dim_consultation </em>
 </p>
 
