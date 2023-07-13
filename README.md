@@ -24,11 +24,11 @@ Comment donc restructurer et modéliser les données du CHU?
 ## Solution
 
 <p align="center">
- <img width="33%" src="images/Solutions_Projet.png">
+ <img width="80%" src="images/Solutions_Projet.png">
  <br> <em> Solutions technologiques utilisées </em>
 </p>
 
 <p align="center">
- <img width="33%" src="images/Schema_architecture_corrige.png">
+ <img width="80%" src="images/Schema_architecture_corrige.png">
  <br> <em> Schèma architecture corrigée </em>
 </p>
