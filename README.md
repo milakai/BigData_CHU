@@ -18,5 +18,7 @@ Comment donc restructurer et modéliser les données du CHU?
 
 ![Image architecture existante](/schema_Archi_existante.jpg)
 
+<img src="schema_Archi_existante.jpg" width="100" height="100">
+
 ## Solution
 
