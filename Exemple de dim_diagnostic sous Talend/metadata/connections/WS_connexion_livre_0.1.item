@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_vl_MAM02EeyMlPNVGGy7kA" name="WS_connexion_livre" id="_szoOkM01EeyMlPNVGGy7kA" label="WS_connexion_livre" dataPackage="_uaVUYM06EeyMlPNVGGy7kA" ContextMode="true" ContextId="_uhH1sM02EeyMlPNVGGy7kA" contextName="Default" DatabaseType="MySQL" DriverClass="com.mysql.cj.jdbc.Driver" URL="jdbc:mysql://localhost:3306/gestion_livres?serverTimezone=UTC" dbVersionString="MYSQL_8" Port="context.WS_connexion_livre_Port" Username="context.WS_connexion_livre_Login" Password="context.WS_connexion_livre_Password" ServerName="context.WS_connexion_livre_Server" DatasourceName="" FileFieldName="" SID="context.WS_connexion_livre_Database" SqlSynthax="" StringQuote="" NullChar="" DbmsId="mysql_id" ProductId="MYSQL" AdditionalParams="context.WS_connexion_livre_AdditionalParams" StandardSQL="true" SQLMode="false" UiSchema="">
+    <taggedValue xmi:id="_vl_MAc02EeyMlPNVGGy7kA" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="_vmh-kM02EeyMlPNVGGy7kA" tag="package filter" value=""/>
+    <taggedValue xmi:id="_vms9sM02EeyMlPNVGGy7kA" tag="Status" value=""/>
+    <taggedValue xmi:id="_vms9sc02EeyMlPNVGGy7kA" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_vms9ss02EeyMlPNVGGy7kA" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_vms9s802EeyMlPNVGGy7kA" tag="Description" value=""/>
+    <taggedValue xmi:id="_vms9tM02EeyMlPNVGGy7kA" tag="Author" value=""/>
+    <taggedValue xmi:id="_vms9tc02EeyMlPNVGGy7kA" tag="otherParameter"/>
+    <taggedValue xmi:id="_vnirMM02EeyMlPNVGGy7kA" tag="DB ProductName" value="MySQL"/>
+    <taggedValue xmi:id="_vnirMc02EeyMlPNVGGy7kA" tag="DB ProductVersion" value="8.0.29"/>
+    <taggedValue xmi:id="_vnirMs02EeyMlPNVGGy7kA" tag="DB IdentifierQuoteString" value="`"/>
+    <parameters xmi:id="_vl_MAs02EeyMlPNVGGy7kA" key="CONN_PARA_KEY_USERNAME" value="context.WS_connexion_livre_Login"/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_uaVUYM06EeyMlPNVGGy7kA" name="gestion_livres" dataManager="_vl_MAM02EeyMlPNVGGy7kA"/>
+</xmi:XMI>

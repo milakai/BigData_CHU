@@ -1,3 +1,4 @@
+
 # BigData_CHU
 
 ## Contexte
@@ -29,7 +30,7 @@ Comment donc restructurer et modéliser les données du CHU?
 </p>
 
 <p align="center">
- <img width="70%" src="images/Schema_architecture_corrige.png">
+ <img width="80%" src="images/Schema_architecture_corrige.png">
  <br> <em> Schèma architecture corrigée </em>
 </p>
 
@@ -66,7 +67,6 @@ Voici un des exemples de jobs qu'on a fait au long du projet:
 </p>
 
 Pour la dimension "professionnel_de_sante", deux fichiers source ont été fusionnés, un .csv et un de la base de données Postgre, les deux avec la structure "professionnel_sante". Ensuite, ces données se sont fait liées à la table "activite_professionnel_travail" pour préparer une future liaison entre professionnels et établissements.
-Pour des raisons de performance, nous avons seulement récupéré les ID de chaque table, évitant ainsi une surcharge de la VM et de Talend dues à l'importation des noms et prénoms. Nous avons donc optimisé l'exécution du job en utilisant uniquement les champs nécessaires.
+Pour des raisons de performance, seulement les ID de chaque table ont été récupérés, évitant ainsi une surcharge de la VM et de Talend dues à l'importation des noms et prénoms. Donc l'exécution du job se voit optimisée en utilisant uniquement les champs nécessaires.
 
 ---
-

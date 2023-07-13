@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_nCAJ0M0XEeyxMeJBKu8htQ" dataPackage="_nCAJ7s0XEeyxMeJBKu8htQ" DatabaseType="HBase" Port="2181" Username="context.MyHadoopCluster_User" ServerName="quickstart.cloudera" SID="HBase" DbmsId="mysql_id" ProductId="HBASE">
+    <parameters xmi:id="_nCAJ0c0XEeyxMeJBKu8htQ" key="CONN_PARA_KEY_DB_PORT" value="2181"/>
+    <parameters xmi:id="_nCAJ0s0XEeyxMeJBKu8htQ" key="CONN_PARA_KEY_USE_YARN" value="true"/>
+    <parameters xmi:id="_nCAJ080XEeyxMeJBKu8htQ" key="CONN_PARA_KEY_RESOURCEMANAGER_SCHEDULER_ADDRESS" value="context.MyHadoopCluster2_ResourceManagerScheduler"/>
+    <parameters xmi:id="_nCAJ1M0XEeyxMeJBKu8htQ" key="CONN_PARA_KEY_USE_CUSTOM_CONFS" value="true"/>
+    <parameters xmi:id="_nCAJ1c0XEeyxMeJBKu8htQ" key="CONN_PARA_KEY_NAME_NODE_URL" value="context.MyHadoopCluster2_NameNodeUri"/>
+    <parameters xmi:id="_nCAJ1s0XEeyxMeJBKu8htQ" key="CONN_PARA_KEY_USERNAME" value="context.MyHadoopCluster2_User"/>
+    <parameters xmi:id="_nCAJ180XEeyxMeJBKu8htQ" key="CONN_PARA_KEY_HADOOP_CLUSTER_ID" value="_t5W80M0PEeyxMeJBKu8htQ"/>
+    <parameters xmi:id="_nCAJ2M0XEeyxMeJBKu8htQ" key="CONN_PARA_KEY_JOB_HISTORY_PRINCIPAL" value="mapred/_HOST@EXAMPLE.COM"/>
+    <parameters xmi:id="_nCAJ2c0XEeyxMeJBKu8htQ" key="CONN_PARA_KEY_HBASE_VERSION" value="Cloudera_CDH5_12"/>
+    <parameters xmi:id="_nCAJ2s0XEeyxMeJBKu8htQ" key="CONN_PARA_KEY_JOB_TRACKER_URL" value="context.MyHadoopCluster2_ResourceManager"/>
+    <parameters xmi:id="_nCAJ280XEeyxMeJBKu8htQ" key="CONN_PARA_KEY_JOBHISTORY_ADDRESS" value="context.MyHadoopCluster2_JobHistory"/>
+    <parameters xmi:id="_nCAJ3M0XEeyxMeJBKu8htQ" key="CONN_PARA_KEY_HIVE_VERSION" value="Cloudera_CDH5_12"/>
+    <parameters xmi:id="_nCAJ3c0XEeyxMeJBKu8htQ" key="CONN_PARA_KEY_HBASE_ZNODE_PARENT" value="/hbase"/>
+    <parameters xmi:id="_nCAJ3s0XEeyxMeJBKu8htQ" key="CONN_PARA_KEY_USE_DATANODE_HOSTNAME" value="true"/>
+    <parameters xmi:id="_nCAJ380XEeyxMeJBKu8htQ" key="CONN_PARA_KEY_DB_SERVER" value="quickstart.cloudera"/>
+    <parameters xmi:id="_nCAJ4M0XEeyxMeJBKu8htQ" key="CONN_PARA_KEY_DB_TYPE" value="HBase"/>
+    <parameters xmi:id="_nCAJ4c0XEeyxMeJBKu8htQ" key="CONN_PARA_KEY_MAPRDB_AUTHENTICATION_USE_MAPRTICKET" value="false"/>
+    <parameters xmi:id="_nCAJ4s0XEeyxMeJBKu8htQ" key="CONN_PARA_KEY_JOB_TRACKER_PRINCIPAL" value="yarn/_HOST@EXAMPLE.COM"/>
+    <parameters xmi:id="_nCAJ480XEeyxMeJBKu8htQ" key="CONN_PARA_KEY_HIVE_DISTRIBUTION" value="CLOUDERA"/>
+    <parameters xmi:id="_nCAJ5M0XEeyxMeJBKu8htQ" key="CONN_PARA_KEY_MAPRDB_VERSION" value="Cloudera_CDH5_12"/>
+    <parameters xmi:id="_nCAJ5c0XEeyxMeJBKu8htQ" key="CONN_PARA_KEY_MAPRDB_DISTRIBUTION" value="CLOUDERA"/>
+    <parameters xmi:id="_nCAJ5s0XEeyxMeJBKu8htQ" key="CONN_PARA_KEY_USE_KRB" value="false"/>
+    <parameters xmi:id="_nCAJ580XEeyxMeJBKu8htQ" key="CONN_PARA_KEY_HBASE_DISTRIBUTION" value="CLOUDERA"/>
+    <parameters xmi:id="_nCAJ6M0XEeyxMeJBKu8htQ" key="CONN_PARA_KEY_STAGING_DIRECTORY" value="context.MyHadoopCluster2_StagingDirectory"/>
+    <parameters xmi:id="_nCAJ6c0XEeyxMeJBKu8htQ" key="CONN_PARA_KEY_NAME_NODE_PRINCIPAL" value="hdfs/_HOST@EXAMPLE.COM"/>
+    <parameters xmi:id="_nCAJ6s0XEeyxMeJBKu8htQ" key="CONN_PARA_KEY_DB_PRODUCT" value="HBASE"/>
+    <parameters xmi:id="_nCAJ680XEeyxMeJBKu8htQ" key="CONN_PARA_KEY_HIVE_AUTHENTICATION_USE_MAPRTICKET" value="false"/>
+    <parameters xmi:id="_nCAJ7M0XEeyxMeJBKu8htQ" key="CONN_PARA_KEY_HBASE_SET_ZNODE_PARENT" value="true"/>
+    <parameters xmi:id="_nCAJ7c0XEeyxMeJBKu8htQ" key="CONN_PARA_KEY_HBASE_AUTHENTICATION_USE_MAPRTICKET" value="false"/>
+    <parameters xmi:id="_iE0MMM0ZEeyxMeJBKu8htQ" key="CONN_PARA_KEY_HADOOP_CUSTOM_JARS"/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_nCAJ7s0XEeyxMeJBKu8htQ" name="HBase" dataManager="_nCAJ0M0XEeyxMeJBKu8htQ"/>
+</xmi:XMI>

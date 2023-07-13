@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_ZYxaYM0fEeyxMeJBKu8htQ" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_ZYxaYc0fEeyxMeJBKu8htQ" comment="" name="HDFS_Workshop_HdfsFileSeparator" prompt="HDFS_Workshop_HdfsFileSeparator?" promptNeeded="false" type="id_String" value="&quot;;&quot;"/>
+  <contextParameter xmi:id="_ZYxaYs0fEeyxMeJBKu8htQ" comment="" name="HDFS_Workshop_HdfsUser" prompt="HDFS_Workshop_HdfsUser?" promptNeeded="false" type="id_String" value="cloudera"/>
+  <contextParameter xmi:id="_ZYxaY80fEeyxMeJBKu8htQ" comment="" name="HDFS_Workshop_HdfsRowSeparator" prompt="HDFS_Workshop_HdfsRowSeparator?" promptNeeded="false" type="id_String" value="&quot;\n&quot;"/>
+</talendfile:ContextType>

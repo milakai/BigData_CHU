@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TalendHDFS:HDFSConnection xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendHDFS="http://www.talend.org/hdfs" xmi:id="_abWRsM0fEeyxMeJBKu8htQ" name="HDFS_Workshop" id="_abVDkM0fEeyxMeJBKu8htQ" label="HDFS_Workshop" ContextMode="true" ContextId="_ZYYY0M0fEeyxMeJBKu8htQ" contextName="Default" relativeHadoopClusterId="_t5W80M0PEeyxMeJBKu8htQ" hadoopProperties="[]" userName="context.HDFS_Workshop_HdfsUser" rowSeparator="context.HDFS_Workshop_HdfsRowSeparator" fieldSeparator="context.HDFS_Workshop_HdfsFileSeparator"/>

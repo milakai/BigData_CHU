@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_yGaFkNEAEeyyybtoxh32hw" name="activite_professionnel_sante" dataPackage="_yGaFkdEAEeyyybtoxh32hw" Server="Localhost 127.0.0.1" FilePath="C:/Users/Administrateur.WIN-T87HKARVT4F/Documents/Bdd_Gestion_des_professionnels/activite_professionnel_sante.csv" Encoding="UTF-8" FieldSeparatorValue="&quot;;&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_yGaFkdEAEeyyybtoxh32hw" name="default" dataManager="_yGaFkNEAEeyyybtoxh32hw">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_yGaFktEAEeyyybtoxh32hw" id="_pgZSANEAEeyyybtoxh32hw" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yGaFk9EAEeyyybtoxh32hw" label="identifiant" length="9" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yGaFlNEAEeyyybtoxh32hw" label="identifiant_organisation" length="15" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yGaFldEAEeyyybtoxh32hw" label="mode_exercice" length="8" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_uhheUM02EeyMlPNVGGy7kA" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_uhheUc02EeyMlPNVGGy7kA" comment="" name="WS_connexion_livre_Password" prompt="WS_connexion_livre_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:zSkqFpJmeUZ6oImJTMwx35Z4mV4+UGIULQEVeLbtxGxZqC3P"/>
+  <contextParameter xmi:id="_uhheUs02EeyMlPNVGGy7kA" comment="" name="WS_connexion_livre_Server" prompt="WS_connexion_livre_Server?" promptNeeded="false" type="id_String" value="localhost"/>
+  <contextParameter xmi:id="_uhheU802EeyMlPNVGGy7kA" comment="" name="WS_connexion_livre_Login" prompt="WS_connexion_livre_Login?" promptNeeded="false" type="id_String" value="root"/>
+  <contextParameter xmi:id="_uhheVM02EeyMlPNVGGy7kA" comment="" name="WS_connexion_livre_Database" prompt="WS_connexion_livre_Database?" promptNeeded="false" type="id_String" value="gestion_livres"/>
+  <contextParameter xmi:id="_uhheVc02EeyMlPNVGGy7kA" comment="" name="WS_connexion_livre_Port" prompt="WS_connexion_livre_Port?" promptNeeded="false" type="id_String" value="3306"/>
+  <contextParameter xmi:id="_uhheVs02EeyMlPNVGGy7kA" comment="" name="WS_connexion_livre_AdditionalParams" prompt="WS_connexion_livre_AdditionalParams?" promptNeeded="false" type="id_String" value="serverTimezone=UTC"/>
+</talendfile:ContextType>

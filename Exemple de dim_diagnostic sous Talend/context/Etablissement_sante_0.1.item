@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_LjjHANBAEeyMlPNVGGy7kA" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_LjjHAdBAEeyMlPNVGGy7kA" comment="" name="Etablissement_sante_RowSeparator" prompt="Etablissement_sante_RowSeparator?" promptNeeded="false" type="id_String" value="&quot;\n&quot;"/>
+  <contextParameter xmi:id="_LjjHAtBAEeyMlPNVGGy7kA" comment="" name="Etablissement_sante_File" prompt="Etablissement_sante_File?" promptNeeded="false" type="id_File" value="C:/Users/Administrateur.WIN-T87HKARVT4F/Documents/Bdd_Gestion_des_professionnels/etablissement_sante.csv"/>
+  <contextParameter xmi:id="_LjjHA9BAEeyMlPNVGGy7kA" comment="" name="Etablissement_sante_Encoding" prompt="Etablissement_sante_Encoding?" promptNeeded="false" type="id_String" value="UTF-8"/>
+  <contextParameter xmi:id="_LjjHBNBAEeyMlPNVGGy7kA" comment="" name="Etablissement_sante_FieldSeparator" prompt="Etablissement_sante_FieldSeparator?" promptNeeded="false" type="id_String" value="&quot;;&quot;"/>
+  <contextParameter xmi:id="_LjjHBdBAEeyMlPNVGGy7kA" comment="" name="Etablissement_sante_Header" prompt="Etablissement_sante_Header?" promptNeeded="false" type="id_Integer" value="1"/>
+</talendfile:ContextType>
