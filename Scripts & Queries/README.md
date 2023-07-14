@@ -119,3 +119,30 @@ De même pour « dim_deces » et « dim_deces_part ».
  <img width="70%" src="../images/PerfPart_Deces.png">
  <br> <em> De même: une réduction de l'ordre de 100 ! </em>
 </p>
+
+## Visualisation de données
+
+Nombre de décès par localisation (région) sur l’année 2019:
+
+<p align="center">
+ <img width="70%" src="../images/Requete_NbDecesParRegion.png">
+ <br> <em> Requête sous Hive </em>
+</p>
+
+<p align="center">
+ <img width="70%" src="../images/Graphe_DecesParRegion.png">
+ <br> <em> Graphe décès par région: on observe la tendance que les régions les plus denses présentent le nombre le plus important de décès </em>
+</p>
+
+Taux de consultation par professionnel:
+
+<p align="center">
+ <img width="70%" src="../images/PowerBI_ConsParProf.png">
+ <br> <em> Importation sous PowerBI </em>
+</p>
+
+<p align="center">
+ <img width="70%" src="../images/Graphe_ConsParProf.png">
+ <br> <em> On observe une proportion de consultations par professionnel assez distribué apart pour un cas </em>
+</p>
+
