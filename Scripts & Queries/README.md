@@ -101,7 +101,7 @@ On vérifie si notre partitionnement est valide.
 
 <p align="center">
  <img width="70%" src="../images/Partition_Deces.png">
- <br> <em> Plusieurs partitions en fonction du nombre des régions </em>
+ <br> <em> Plusieurs partitions en fonction du nombre des régions donc OK </em>
 </p>
 
 ## Evaluation de la performance
@@ -143,6 +143,6 @@ Taux de consultation par professionnel:
 
 <p align="center">
  <img width="70%" src="../images/Graphe_ConsParProf.png">
- <br> <em> On observe une proportion de consultations par professionnel assez distribué apart pour un cas </em>
+ <br> <em> On observe une proportion de consultations par professionnel assez distribuée apart pour un cas </em>
 </p>
 
