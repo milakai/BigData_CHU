@@ -54,7 +54,7 @@ Enfin, on a décidé de réaliser une vue pour notre table « fact_resultat » c
 
     and dim_etablissement_sante.eta_id_organisation = dim_professionel_sante.ps_id_org
 
-    and dim_ satisfaction.sas_id_ finess = and dim_etablissement_sante.eta_finesse_etablissement_juridique;
+    and dim_satisfaction.sas_id_finess = and dim_etablissement_sante.eta_finesse_etablissement_juridique;
 ```
 
 <p align="center">
@@ -64,3 +64,58 @@ Enfin, on a décidé de réaliser une vue pour notre table « fact_resultat » c
 
 ## Partionnement et bucketing
 
+### Etape 1
+
+Le partitionnement et le bucketing sont deux méthodes utilisées pour optimiser les performances des requêtes dans le traitement de Big Data. Ils sont généralement utilisés dans des systèmes comme Hadoop Hive qui sont conçus pour manipuler de grandes quantités de données.
+
+Tout d’abord, on crée des tables externes de partionnement pour ne pas compromettre les données stockées dans notre HDFS.
+Ensuite, on désigne la colonne que l’on veut partitionner et bucketer. 
+
+<p align="center">
+ <img width="70%" src="../images/Bucket&partition_Sexe.png">
+ <br> <em> Aperçu de la vue créée </em>
+</p>
+
+<p align="center">
+ <img width="70%" src="../images/Bucket&partition_Deces.png">
+ <br> <em> Aperçu de la vue créée </em>
+</p>
+
+### Etape 2
+
+Après avoir construit l’architecture de notre table, on insère les données de table d’origine dans notre nouvelle table partitionnée.
+
+<p align="center">
+ <img width="70%" src="../images/InsertionPart_Sexe.png">
+ <br> <em> Aperçu de la vue créée </em>
+</p>
+
+### Etape 3
+
+On vérifie si notre partitionnement est valide.
+
+<p align="center">
+ <img width="70%" src="../images/Partition_Sexe.png">
+ <br> <em> Aperçu de la vue créée </em>
+</p>
+
+<p align="center">
+ <img width="70%" src="../images/Partition_Deces.png">
+ <br> <em> Aperçu de la vue créée </em>
+</p>
+
+## Evaluation de la performance
+
+On peut observer une différence de temps conséquente entre nos tables « dim_patient » et « dim_patient_part ».
+
+<p align="center">
+ <img width="70%" src="../images/PerfPart_Sexe.png">
+ <br> <em> Aperçu de la vue créée </em>
+</p>
+
+De même pour « dim_deces » et « dim_deces_part ».
+
+<p align="center">
+ <img width="70%" src="../images/PerfPart_Deces.png">
+ <br> <em> Aperçu de la vue créée </em>
+</p>
