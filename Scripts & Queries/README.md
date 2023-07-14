@@ -73,12 +73,12 @@ Ensuite, on désigne la colonne que l’on veut partitionner et bucketer.
 
 <p align="center">
  <img width="70%" src="../images/Bucket&partition_Sexe.png">
- <br> <em> Aperçu de la vue créée </em>
+ <br> <em> Partionnement selon sexe car valeur binaire (male et female) donc 2 tableaux </em>
 </p>
 
 <p align="center">
  <img width="70%" src="../images/Bucket&partition_Deces.png">
- <br> <em> Aperçu de la vue créée </em>
+ <br> <em> Partionnement selon région car valeurs limitées et non susceptibles d'augmenter avec le temps (moins de tableaux de partion) </em>
 </p>
 
 ### Etape 2
@@ -87,7 +87,7 @@ Après avoir construit l’architecture de notre table, on insère les données 
 
 <p align="center">
  <img width="70%" src="../images/InsertionPart_Sexe.png">
- <br> <em> Aperçu de la vue créée </em>
+ <br> <em> Insertion des données </em>
 </p>
 
 ### Etape 3
@@ -96,12 +96,12 @@ On vérifie si notre partitionnement est valide.
 
 <p align="center">
  <img width="70%" src="../images/Partition_Sexe.png">
- <br> <em> Aperçu de la vue créée </em>
+ <br> <em> 2 nouvelles partitions donc OK </em>
 </p>
 
 <p align="center">
  <img width="70%" src="../images/Partition_Deces.png">
- <br> <em> Aperçu de la vue créée </em>
+ <br> <em> Plusieurs partitions en fonction du nombre des régions </em>
 </p>
 
 ## Evaluation de la performance
@@ -110,12 +110,12 @@ On peut observer une différence de temps conséquente entre nos tables « dim_p
 
 <p align="center">
  <img width="70%" src="../images/PerfPart_Sexe.png">
- <br> <em> Aperçu de la vue créée </em>
+ <br> <em> Une réduction de l'ordre de 100 ! </em>
 </p>
 
 De même pour « dim_deces » et « dim_deces_part ».
 
 <p align="center">
  <img width="70%" src="../images/PerfPart_Deces.png">
- <br> <em> Aperçu de la vue créée </em>
+ <br> <em> De même: une réduction de l'ordre de 100 ! </em>
 </p>
