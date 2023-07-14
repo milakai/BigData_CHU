@@ -16,17 +16,19 @@ Exemples de script pour créer d'autre tables:
 
 ### Exemple avec la dimension satisfaction
 
+```SQL
     CREATE EXTERNAL TABLE dim_satisfaction(sas_id_finess int, sas_score_all_ajust float)
     PARTITIONED BY (sas_region string)
     ROW FORMAT DELIMITED
     FIELDS TERMINATED BY ",";
     STORED AS TEXTFILE
     LOCATION "/user/hive/data";
+```
 
 ## Utilisation d'une view
 
 Enfin, on a décidé de réaliser une vue pour notre table « fact_resultat » car cela nous permet de gagner du temps sur l’écriture de requêtes, mais aussi de centraliser toutes les informations importantes dans une simple table virtuelle.
-
+```SQL
     CREATE VIEW vfait_resultat AS
 
     SELECT
@@ -53,9 +55,12 @@ Enfin, on a décidé de réaliser une vue pour notre table « fact_resultat » c
     and dim_etablissement_sante.eta_id_organisation = dim_professionel_sante.ps_id_org
 
     and dim_ satisfaction.sas_id_ finess = and dim_etablissement_sante.eta_finesse_etablissement_juridique;
+```
 
 <p align="center">
  <img width="70%" src="../images/Visualisation_vue.png">
  <br> <em> Aperçu de la vue créée </em>
 </p>
+
+## Partionnement et bucketing
 
