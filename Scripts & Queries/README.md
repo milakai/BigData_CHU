@@ -23,7 +23,7 @@ Exemples de script pour créer d'autre tables:
     STORED AS TEXTFILE
     LOCATION "/user/hive/data";
 
-### Utilisation d'une view
+## Utilisation d'une view
 
 Enfin, on a décidé de réaliser une vue pour notre table « fact_resultat » car cela nous permet de gagner du temps sur l’écriture de requêtes, mais aussi de centraliser toutes les informations importantes dans une simple table virtuelle.
 
@@ -58,3 +58,4 @@ Enfin, on a décidé de réaliser une vue pour notre table « fact_resultat » c
  <img width="70%" src="../images/Visualisation_vue.png">
  <br> <em> Aperçu de la vue créée </em>
 </p>
+
