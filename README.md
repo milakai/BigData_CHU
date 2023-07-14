@@ -15,7 +15,7 @@ Comment donc restructurer et modéliser les données du CHU?
 - Volume de données
 - Format de fichiers/données
 - Schéma d’architecture du stagiaire existante
-- Environnement médical (maximum 1 heure de période hors-service)
+- Environnement médical (disponibilité)
 
 <p align="center">
  <img width="33%" src="images/schema_Archi_existante.jpg">
