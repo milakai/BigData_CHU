@@ -19,13 +19,13 @@ Une première consultation a permis de mettre en évidence le type d'analyses so
     - Période de temps (Consultation)
 
     CREATE VIEW vtaux_consultation_patients_diagnostic_période AS
-
+    
     SELECT 
-
+    
     COUNT(dim_patient.pat_nom)/COUNT(dim_consultation.con_id_patient), dim_diagnostic.dia_label, dim_consultation.con_date FROM dim_patient, dim_consultation, dim_diagnostic
-
+    
     GROUP BY dim_diagnostic.dia_label, dim_consultation.con_date
-
+    
     WHERE dim_patient.pat_id_pk=dim_consultation.con_id_patient AND dim_consultation.con_code_diag=dim_diagnostic.dia_code ;
 
 - Taux global d'hospitalisation des patients dans une période donnée Y (f)
